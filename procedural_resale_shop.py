@@ -72,7 +72,7 @@ def refurbish(item_id: int, new_os: Optional[str] = None):
         elif int(computer["year_made"]) < 2012:
             computer["price"] = 250 # heavily-discounted price on machines 10+ years old
         elif int(computer["year_made"]) < 2018:
-            computer["price"] = 550 # discounted price on machines 4-to-10 year old machines
+            computer["price"] = 550 # discount`ed price on machines 4-to-10 year old machines
         else:
             computer["price"] = 1000 # recent stuff
 
